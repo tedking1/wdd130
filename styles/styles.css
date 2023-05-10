@@ -1,6 +1,9 @@
 nav {
     background-color: steelblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
@@ -57,16 +60,33 @@ main img {
 
 p { padding: 0%;}
 
-footer {
-    margin-top: lem;
-    border-top: 1px solid #000;
-    text-align: center;
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 .box {
     margin: lrem;
+    display: flex;
     border: 1px solid rgba(0, 0, 0,.1);
     padding: 1rem;
     background-color: #ddd;
     color: #000;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
