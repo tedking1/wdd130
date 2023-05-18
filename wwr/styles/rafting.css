@@ -24,15 +24,26 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: sans-serif;
     color: var(--primary-color);
+    text-align: center;
+}
+
+.h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
 }
 
 header {
-    padding: 20px;
-    background-color: var(--accent1-color);
+    margin: 1rem auto;
+	display: flex;
+	grid-template-columns: 120px 1fr 2fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
 }
 
 p {
     padding: 25px;
+    text-align: center;
 }
 
 nav {
@@ -41,24 +52,38 @@ nav {
     display: flex
 }
 
+nav li {
+    flex: 1 1 100%;
+    align-content: center;
+    text-align: center;
+}
 nav a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
-    padding: 1rem;
+    padding: 20px;
+    align-items: center;
 }
 
 nav a:link, nav a:visited {
     color: var(--nav-link-color);
+    text-align: center;
 }
 
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+    text-align: right;
+    text-decoration: none;
 }
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+img {
+    align-items: right;
+    padding: auto;
 }
